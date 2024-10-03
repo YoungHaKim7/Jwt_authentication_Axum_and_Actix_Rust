@@ -16,3 +16,10 @@ https://youtu.be/n2M4A4mO0QU?si=wxij-2saqjrFtbnK
 
 # Backend in Rust 02 - JWT Authentication, Sea ORM, Axum, Rust | Red Rustacean 
 - https://youtu.be/QqPqlUqxW2A?si=o6kHYQCTm7YTVIkp
+
+<hr />
+
+# Building Web APIs With Rust and Axum - An Introduction | Rainer Stropek
+- https://youtu.be/q53xalVoc6w?si=lxTa2V_dgqqRel6a
+  - github
+    - https://github.com/rstropek/rust-api-fxs
