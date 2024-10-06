@@ -11,6 +11,13 @@ https://youtu.be/n2M4A4mO0QU?si=wxij-2saqjrFtbnK
 
 <hr/>
 
+# curl로 테스트 하는 방법
+- How do I POST JSON data with cURL?
+  - https://stackoverflow.com/questions/7172784/how-do-i-post-json-data-with-curl
+
+
+<hr />
+
 # Backend In Rust - 01 Building a basic server | Red Rustacean 
 - https://youtu.be/kcWsEEVvW88?si=BW7Jbq0_mGN_iSFe
 
