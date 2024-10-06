@@ -23,3 +23,8 @@ https://youtu.be/n2M4A4mO0QU?si=wxij-2saqjrFtbnK
 - https://youtu.be/q53xalVoc6w?si=lxTa2V_dgqqRel6a
   - github
     - https://github.com/rstropek/rust-api-fxs
+
+<hr />
+
+# JWT Authentication in Rust | A Step-by-Step Guide | Semicolon
+- https://youtu.be/p2ljQrRl0Mg?si=5mYkblL4qzpHa8sO
