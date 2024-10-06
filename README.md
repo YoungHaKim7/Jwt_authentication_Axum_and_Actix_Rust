@@ -26,5 +26,5 @@ https://youtu.be/n2M4A4mO0QU?si=wxij-2saqjrFtbnK
 
 <hr />
 
-# JWT Authentication in Rust | A Step-by-Step Guide | Semicolon
+# (axum)JWT Authentication in Rust | A Step-by-Step Guide | Semicolon
 - https://youtu.be/p2ljQrRl0Mg?si=5mYkblL4qzpHa8sO
