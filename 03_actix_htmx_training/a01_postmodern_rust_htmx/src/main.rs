@@ -18,10 +18,17 @@ async fn index() -> impl Responder {
     HttpResponse::Ok().body(page_content)
 }
 
+#[get("/info")]
+async fn info() -> impl Responder {
+    let context = tera::Context::new();
+    let page_content = TEMPLATES.render("info.html", &context).unwrap();
+    HttpResponse::Ok().body(page_content)
+}
+
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     println!("localhost:8080 or 127.0.0.1:8080 \t🚀 🚀 🚀 ");
-    HttpServer::new(|| App::new().service(index))
+    HttpServer::new(|| App::new().service(index).service(info))
         .bind(("127.0.0.1", 8080))?
         .run()
         .await
