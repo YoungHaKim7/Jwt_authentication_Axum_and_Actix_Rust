@@ -12,14 +12,15 @@ lazy_static! {
 
 #[get("/")]
 async fn index() -> impl Responder {
-    let context = tera::Context::new();
+    let mut context = tera::Context::new();
+    context.insert("message_from_rust", "Hello from Rust!");
     let page_content = TEMPLATES.render("index.html", &context).unwrap();
     HttpResponse::Ok().body(page_content)
 }
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    println!("localhost:8080 or 127.0.0.1 🚀 🚀 🚀 ");
+    println!("localhost:8080 or 127.0.0.1:8080 \t🚀 🚀 🚀 ");
     HttpServer::new(|| App::new().service(index))
         .bind(("127.0.0.1", 8080))?
         .run()
