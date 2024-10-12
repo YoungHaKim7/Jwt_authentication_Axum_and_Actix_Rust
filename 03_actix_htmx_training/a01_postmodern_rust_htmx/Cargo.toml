@@ -1,0 +1,9 @@
+[package]
+name = "a01_postmodern_rust_htmx"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+lazy_static = "1"
+tera = "1"
