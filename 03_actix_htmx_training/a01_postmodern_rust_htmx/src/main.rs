@@ -1,3 +1,4 @@
+use actix_files as fs;
 use actix_web::{get, App, HttpResponse, HttpServer, Responder};
 use lazy_static::lazy_static;
 use tera::Tera;
@@ -37,6 +38,16 @@ async fn words_endpoint() -> impl Responder {
     HttpResponse::Ok().body(page_content)
 }
 
+#[get("/word-pair")]
+async fn word_pair_endpoint() -> impl Responder {
+    let (word1, word2) = words::get_random_word_pair();
+    let mut context = tera::Context::new();
+    context.insert("word1", &word1);
+    context.insert("word2", &word2);
+    let page_content = TEMPLATES.render("word_pair.html", &context).unwrap();
+    HttpResponse::Ok().body(page_content)
+}
+
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     println!("localhost:8080 or 127.0.0.1:8080 \t🚀 🚀 🚀 ");
@@ -45,6 +56,8 @@ async fn main() -> std::io::Result<()> {
             .service(index)
             .service(info)
             .service(words_endpoint)
+            .service(word_pair_endpoint)
+            .service(fs::Files::new("/assets", "./assets"))
     })
     .bind(("127.0.0.1", 8080))?
     .run()

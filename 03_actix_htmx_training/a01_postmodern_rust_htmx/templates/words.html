@@ -3,13 +3,17 @@
 {% block content %}
 
 <h2>words page</h2>
+<div id="word-pair">
 <p id="spanish">
     {{word1}}
 </p>
-<button onclick="revealAnswer()">Reveal</button>
 <p id="english" style="visibility: hidden;">
     {{word2}}
 </p>
+</div>
+<button onclick="revealAnswer()">Reveal</button>
+
+<button hx-get="/word-pair">Next Word Pair</button>
 
 <script>
     function revealAnswer() {
