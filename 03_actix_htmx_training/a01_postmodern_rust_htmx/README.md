@@ -1,12 +1,5 @@
-# Result
+# run
 
 ```bash
-
+cargo watch -x run
 ```
-
-# Result
-
-```bash
-
-```
-

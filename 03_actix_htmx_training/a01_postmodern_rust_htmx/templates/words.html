@@ -3,11 +3,18 @@
 {% block content %}
 
 <h2>words page</h2>
-<p>
+<p id="spanish">
     {{word1}}
 </p>
-<p>
+<button onclick="revealAnswer()">Reveal</button>
+<p id="english" style="visibility: hidden;">
     {{word2}}
 </p>
+
+<script>
+    function revealAnswer() {
+        document.getElementById("english").style.visibility = "visible";
+    }
+</script>
 
 {% endblock %}
