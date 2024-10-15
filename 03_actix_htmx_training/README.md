@@ -1,3 +1,10 @@
+# Rust+ Actix+Tera 모음
+- MySQL + Rust + Actix
+  - [(240104)FullStack RUST Project - Blogging website using Actix Web 3, Tera |Akhil Sharma](https://youtu.be/k0Ki_bhS5S8?si=FY9QBQhW4ibzKjDH)
+
+
+<hr />
+
 # Rust and HTMX | Postmodern WebDev | CodeScope(part1)
 - https://youtu.be/qCXFi4Jg11c?si=CyyksUe45xS3W8sD
 
