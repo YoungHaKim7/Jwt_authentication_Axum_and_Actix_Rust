@@ -10,5 +10,7 @@ async fn main() {
     let routes = routes::restaurant_routes();
 
     println!("Running the server");
-    warp::serve(routes.)
+    warp::serve(routes.routes.with(warp::trace::request()))
+        .run(([127, 0, 0, 1], 3030))
+        .await;
 }

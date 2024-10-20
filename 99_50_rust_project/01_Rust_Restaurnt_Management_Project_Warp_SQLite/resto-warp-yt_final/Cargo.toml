@@ -1,5 +1,5 @@
 [package]
-name = "resto-warp-yt"
+name = "resto-warp-yt_final"
 version = "0.1.0"
 edition = "2021"
 
@@ -10,9 +10,5 @@ members = [
 ]
 resolver = "2"
 
+
 [dependencies]
-
-
-[[bin]]
-name = "app-server"
-path = "app-server/src/lib.rs"
