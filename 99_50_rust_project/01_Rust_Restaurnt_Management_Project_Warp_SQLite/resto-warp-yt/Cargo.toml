@@ -1,0 +1,18 @@
+[package]
+name = "resto-warp-yt"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+  "app-server",
+  "client-server",
+]
+resolver = "2"
+
+[dependencies]
+
+
+[[bin]]
+name = "app-server"
+path = "app-server/src/lib.rs"
