@@ -4,5 +4,7 @@
 # Result
 
 ```bash
+docker compose up -d
+
 
 ```
