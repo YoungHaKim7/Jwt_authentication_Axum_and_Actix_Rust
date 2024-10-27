@@ -35,3 +35,20 @@ postgres-# \du
 \du
   
 ```
+
+```
+postgres-# \d
+              List of relations
+ Schema |     Name      |   Type   |  Owner
+--------+---------------+----------+----------
+ public | ticket        | table    | postgres
+ public | ticket_id_seq | sequence | postgres
+(2 rows)
+
+postgres-# \d ticket
+                            Table "public.ticket"
+ Column |  Type  | Collation | Nullable |              Default
+--------+--------+-----------+----------+------------------------------------
+ id     | bigint |           | not null | nextval('ticket_id_seq'::regclass)
+ name   | text   |           |          |
+```
