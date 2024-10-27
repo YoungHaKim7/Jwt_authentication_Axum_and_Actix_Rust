@@ -4,16 +4,16 @@
 
 <h2>words page</h2>
 <div id="word-pair">
-<p id="spanish">
-    {{word1}}
-</p>
-<p id="english" style="visibility: hidden;">
-    {{word2}}
-</p>
+    <p id="spanish">
+        {{word1}}
+    </p>
+    <p id="english" style="visibility: hidden;">
+        {{word2}}
+    </p>
 </div>
 <button onclick="revealAnswer()">Reveal</button>
 
-<button hx-get="/word-pair">Next Word Pair</button>
+<button hx-get="/word-pair" hx-target="#word-pair">Next Word Pair</button>
 
 <script>
     function revealAnswer() {
