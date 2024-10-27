@@ -11,6 +11,15 @@
 $ docker run -p 5432:5432 --name test-postgress -e POSTGRES_PASSWORD=1234 -d postgres:latest
 ```
 
+- docker 진입해서 postgres 들어가기
+
+```bash
+$ docker exec -it cfdae bash
+
+root@cfdae7ed6feb:/# psql -U postgres
+
+```
+
 - postgres 명령어 
   - https://m.blog.naver.com/theswice/222042708567
 
