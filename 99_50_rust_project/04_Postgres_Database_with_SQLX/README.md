@@ -52,3 +52,4 @@ postgres-# \d ticket
  id     | bigint |           | not null | nextval('ticket_id_seq'::regclass)
  name   | text   |           |          |
 ```
+
